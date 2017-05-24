@@ -1,24 +1,21 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Doorkeeper
+1. `/oauth/applications` view applications  
+2. `/oauth/authorize` apply authorization code  
+    ```
+    {
+      client_id: abc,
+      redirect_uri: xxx,
+      response_type: code,
+      scope: xxx
+    }
+    ```
+3. `oauth/token` 
+    ```
+    {
+      grant_type: authorization_code,
+      code: xxx,
+      client_id: xxx,
+      redirect_uri: xxx,
+      client_secret: xxx
+    }
+    ```
